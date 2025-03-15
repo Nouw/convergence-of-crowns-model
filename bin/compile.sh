@@ -27,8 +27,6 @@ npx protoc -I="${PROTO_DIR}" \
     --ts_out="${OUT_TS}" \
     ${PROTO_FILES}
 
-npx barrelsby
-
-mv index.ts generated/ts
+npx barrelsby --directory ${OUT_TS} --delete
 
 echo "Compilation finished!"

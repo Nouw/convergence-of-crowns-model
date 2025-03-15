@@ -5,7 +5,11 @@
     "outDir": "./dist",
     "declaration": true,
     "esModuleInterop": true,
-    "strict": true
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "generated/ts/*": ["generated/ts/*"]
+    }
   },
   "include": ["./generated/ts"],
   "exclude": ["node_modules"]
