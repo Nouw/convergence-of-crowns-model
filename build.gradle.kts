@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "net.nouw"
-version = "1.0.2"
+version = "1.0.3"
 
 repositories {
     mavenCentral()
@@ -32,7 +32,7 @@ publishing {
             from(components["java"])  // Exposes the compiled JAR and accompanying metadata
             groupId = "net.nouw"
             artifactId = "convergence-of-crowns-model"
-            version = "1.0.1"
+            version = "1.0.3"
         }
     }
     repositories {
