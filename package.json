@@ -1,5 +1,5 @@
 {
-  "name": "convergence-of-crowns-model",
+  "name": "@nouw/convergence-of-crowns-model",
   "version": "1.0.0",
   "license": "MIT",
   "packageManager": "yarn@4.7.0",
