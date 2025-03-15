@@ -76,9 +76,16 @@ jobs:
 
   kotlin-build-and-publish:
     runs-on: ubuntu-latest
+    needs: [build]
     steps:
       - name: Check out the repository
         uses: actions/checkout@v4
+
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build-folder
+          path: generated
 
       - name: Set up Java
         uses: actions/setup-java@v3
