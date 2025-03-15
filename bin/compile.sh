@@ -17,6 +17,7 @@ PROTO_FILES=$(find "${PROTO_DIR}" -name "*.proto")
 echo "Compiling Protobufs for Kotlin..."
 protoc -I="${PROTO_DIR}" \
     --plugin=protoc-gen-kotlin=protoc-gen-kotlin \
+    --java_out="${OUT_KOTLIN}" \
     --kotlin_out="${OUT_KOTLIN}" \
     ${PROTO_FILES}
 
