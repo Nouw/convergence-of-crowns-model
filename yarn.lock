@@ -214,6 +214,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nouw/convergence-of-crowns-model@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@nouw/convergence-of-crowns-model@workspace:."
+  dependencies:
+    "@commitlint/cli": "npm:^19.8.0"
+    "@commitlint/config-conventional": "npm:^19.8.0"
+    "@protobuf-ts/plugin": "npm:^2.9.5"
+    barrelsby: "npm:^2.8.1"
+    husky: "npm:^9.1.7"
+    typescript: "npm:^5.8.2"
+  languageName: unknown
+  linkType: soft
+
 "@protobuf-ts/plugin-framework@npm:^2.9.5":
   version: 2.9.5
   resolution: "@protobuf-ts/plugin-framework@npm:2.9.5"
@@ -484,19 +497,6 @@ __metadata:
   checksum: 10c0/c9e542f4884119a96a6bf3311ff62cdee55762d8547f4c745ae3ebdc50afe4ba7691e165e34827d5cf63283cbd93ab69917afd7922423075b123d5d9a7a82ed2
   languageName: node
   linkType: hard
-
-"convergence-of-crowns-model@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "convergence-of-crowns-model@workspace:."
-  dependencies:
-    "@commitlint/cli": "npm:^19.8.0"
-    "@commitlint/config-conventional": "npm:^19.8.0"
-    "@protobuf-ts/plugin": "npm:^2.9.5"
-    barrelsby: "npm:^2.8.1"
-    husky: "npm:^9.1.7"
-    typescript: "npm:^5.8.2"
-  languageName: unknown
-  linkType: soft
 
 "cosmiconfig-typescript-loader@npm:^6.1.0":
   version: 6.1.0
