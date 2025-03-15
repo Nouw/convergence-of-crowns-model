@@ -96,5 +96,5 @@ jobs:
       - name: Build and publish Kotlin package
         run: ./gradlew clean build publish
         env:
-          GITHUB_ACTOR: ${{ secrets.PACKAGE_ACTOR }}
-          GITHUB_TOKEN: ${{ secrets.NPM_TOKEN }}
+          PACKAGE_ACTOR: ${{ secrets.PACKAGE_ACTOR }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
