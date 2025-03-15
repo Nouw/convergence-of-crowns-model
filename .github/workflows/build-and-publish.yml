@@ -73,3 +73,21 @@ jobs:
         run: |
           yarn pack
           npm publish package.tgz
+
+  kotlin-build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Build and publish Kotlin package
+        run: ./gradlew clean build publish
+        env:
+          GITHUB_ACTOR: ${{ secrets.PACKAGE_ACTOR }}
+          GITHUB_TOKEN: ${{ secrets.NPM_TOKEN }}
