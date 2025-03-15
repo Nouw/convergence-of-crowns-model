@@ -10,6 +10,6 @@ echo "Bumping version in root package.json..."
 yarn version patch
 
 # Stage the updated package.json files
-git add package.json packages/*/package.json yarn.lock
+git add package.json yarn.lock
 
 echo "Version bumped and changes staged."
