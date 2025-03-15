@@ -21,6 +21,8 @@ sourceSets {
 dependencies {
     implementation(kotlin("stdlib"))
     // Add your other dependencies here
+    implementation("com.google.protobuf:protobuf-java:3.22.0")
+    implementation("com.google.protobuf:protobuf-kotlin:3.22.0")
 }
 
 // Configure publishing to GitHub Packages
