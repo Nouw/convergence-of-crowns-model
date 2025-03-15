@@ -15,7 +15,8 @@
     }
   },
   "scripts": {
-    "build": "./bin/compile.sh"
+    "build": "./bin/compile.sh",
+    "prepare": "husky"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@nouw"
