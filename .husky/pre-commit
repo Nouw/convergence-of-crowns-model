@@ -1,0 +1,18 @@
+#!/bin/bash
+# Check if the current branch is master
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+if [ "$CURRENT_BRANCH" != "main" ]; then
+  echo "Not on master branch. Skipping version bump."
+  exit 0
+fi
+
+echo "Bumping version in root package.json..."
+yarn version patch
+
+echo "Bumping version for all packages in the monorepo..."
+yarn workspaces foreach -A --no-private version patch
+
+# Stage the updated package.json files
+git add package.json packages/*/package.json yarn.lock
+
+echo "Version bumped and changes staged."

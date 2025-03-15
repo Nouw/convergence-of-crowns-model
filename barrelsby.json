@@ -1,0 +1,6 @@
+{
+  "directory": "generated/ts",
+  "delete": true,
+  "exportType": "named",
+  "noStatic": true
+}

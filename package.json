@@ -1,0 +1,30 @@
+{
+  "name": "convergence-of-crowns-model",
+  "version": "1.0.0",
+  "license": "MIT",
+  "packageManager": "yarn@4.7.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "./bin/compile.sh"
+  },
+  "dependencies": {
+    "@protobuf-ts/plugin": "^2.9.5",
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "barrelsby": "^2.8.1",
+    "husky": "^9.1.7"
+  }
+}
