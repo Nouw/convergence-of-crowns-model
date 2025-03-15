@@ -3,11 +3,11 @@ set -e
 
 # Directories
 PROTO_DIR="src"
-OUT_KOTLIN="generated/kotlin"
+OUT_JAVA="generated/java"
 OUT_TS="generated/ts"
 
 # Create output directories if they don't exist
-mkdir -p "${OUT_KOTLIN}"
+mkdir -p "${OUT_JAVA}"
 mkdir -p "${OUT_TS}"
 
 # Find all proto files (recursively)
@@ -17,8 +17,7 @@ PROTO_FILES=$(find "${PROTO_DIR}" -name "*.proto")
 echo "Compiling Protobufs for Kotlin..."
 protoc -I="${PROTO_DIR}" \
     --plugin=protoc-gen-kotlin=protoc-gen-kotlin \
-    --java_out="${OUT_KOTLIN}" \
-    --kotlin_out="${OUT_KOTLIN}" \
+    --java_out="${OUT_JAVA}" \
     ${PROTO_FILES}
 
 # Compile for TypeScript using ts-proto

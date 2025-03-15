@@ -1,10 +1,10 @@
 plugins {
-    kotlin("jvm") version "2.1.10"
+    java
     `maven-publish`
 }
 
 group = "net.nouw"
-version = "1.0.4"
+version = "1.0.5"
 
 repositories {
     mavenCentral()
@@ -12,17 +12,14 @@ repositories {
 
 sourceSets {
     main {
-        kotlin {
-            srcDir("generated/kotlin")
+        java {
+            srcDir("generated/java")
         }
     }
 }
 
 dependencies {
-    implementation(kotlin("stdlib"))
-    // Add your other dependencies here
     implementation("com.google.protobuf:protobuf-java:3.22.0")
-    implementation("com.google.protobuf:protobuf-kotlin:3.22.0")
 }
 
 // Configure publishing to GitHub Packages
@@ -32,7 +29,7 @@ publishing {
             from(components["java"])  // Exposes the compiled JAR and accompanying metadata
             groupId = "net.nouw"
             artifactId = "convergence-of-crowns-model"
-            version = "1.0.4"
+            version = "1.0.5"
         }
     }
     repositories {

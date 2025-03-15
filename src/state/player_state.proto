@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package coc.state;
 
-option java_multiple_files = false;
+option java_multiple_files = true;
 
 enum GameMode {
   SURVIVAL = 0;
