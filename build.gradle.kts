@@ -19,7 +19,7 @@ sourceSets {
 }
 
 dependencies {
-    implementation("com.google.protobuf:protobuf-java:3.22.0")
+    implementation("com.google.protobuf:protobuf-java:4.28.2")
 }
 
 // Configure publishing to GitHub Packages
