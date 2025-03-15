@@ -29,7 +29,7 @@ jobs:
         run: yarn
 
       - name: Compile project
-        run: yarn build
+        run: yarn compile
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
