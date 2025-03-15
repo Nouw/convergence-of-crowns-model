@@ -1,6 +1,6 @@
 {
   "name": "@nouw/convergence-of-crowns-model",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "packageManager": "yarn@4.7.0",
   "main": "./dist/index.js",
@@ -20,7 +20,7 @@
     "commitlint": "commitlint --edit"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@nouw"
+    "registry": "https://npm.pkg.github.com/Nouw/convergence-of-crowns-model"
   },
   "dependencies": {
     "@protobuf-ts/plugin": "^2.9.5",

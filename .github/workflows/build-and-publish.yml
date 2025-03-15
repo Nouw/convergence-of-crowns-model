@@ -67,7 +67,7 @@ jobs:
       - name: Configure GitHub Packages
         run: |
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
-          echo "@nouw:registry=https://npm.pkg.github.com/" >> .npmrc
+          echo "registry=https://npm.pkg.github.com/OWNER/REPO" >> .npmrc
 
       - name: Publish to Github Packages
         run: |
