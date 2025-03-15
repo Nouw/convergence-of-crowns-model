@@ -29,7 +29,7 @@ jobs:
         run: yarn
 
       - name: Compile project
-        run: yarn compile
+        run: yarn build
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
@@ -62,7 +62,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-folder
-          path: build
+          path: generated
 
       - uses: actions/setup-node@v4
         with:
@@ -73,7 +73,8 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - run: yarn build
+      - name: Compile typescript
+        run: tsc
 
       - name: Configure GitHub Packages
         run: |

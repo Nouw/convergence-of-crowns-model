@@ -17,6 +17,9 @@
   "scripts": {
     "build": "./bin/compile.sh"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@nouw"
+  },
   "dependencies": {
     "@protobuf-ts/plugin": "^2.9.5",
     "typescript": "^5.8.2"
