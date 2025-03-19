@@ -8,6 +8,6 @@ message GiveItemEvent {
   string id = 1;
   string player_id = 12;
 
-  int32 item_id = 2;
+  string item_id = 2;
 }
 
