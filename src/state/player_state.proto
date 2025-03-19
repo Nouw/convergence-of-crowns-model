@@ -15,6 +15,7 @@ message PlayerState {
   string player_id = 1;
   GameMode gamemode = 2;
   int32 elo = 3;
+  string nickname = 4;
 }
 
 
