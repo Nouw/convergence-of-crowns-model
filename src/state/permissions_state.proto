@@ -8,7 +8,7 @@ import "model/permissions/role.proto";
 message PermissionsState {
   string player_id = 1;
   repeated coc.permissions.Role role = 2;
-  coc.permissions.Permission direct_permissions = 3;
+  repeated coc.permissions.Permission direct_permissions = 3;
 }
 
 
