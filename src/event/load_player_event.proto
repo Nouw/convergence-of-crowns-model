@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package coc.events;
+
+option java_multiple_files = true;
+
+import "state/permissions_state.proto";
+import "state/player_state.proto";
+
+message LoadPlayerEvent {
+  coc.state.PlayerState player_state = 1;
+  coc.state.PermissionsState permissions_state = 2;
+}
+
