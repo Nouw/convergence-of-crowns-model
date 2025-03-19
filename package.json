@@ -1,6 +1,6 @@
 {
   "name": "@nouw/convergence-of-crowns-model",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "license": "MIT",
   "packageManager": "yarn@4.7.0",
   "main": "./dist/index.js",

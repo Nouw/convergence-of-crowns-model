@@ -12,7 +12,7 @@ enum GameMode {
 }
 
 message PlayerState {
-  string playerId = 1;
+  string player_id = 1;
   GameMode gamemode = 2;
   int32 elo = 3;
 }
