@@ -11,5 +11,5 @@ message Item {
 
 message Enchantments {
   string enchantment = 1;
-  string enchantment_level = 2;
+  int32 enchantment_level = 2;
 }
