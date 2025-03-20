@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package coc.model.kits;
+
+option java_multiple_files = true;
+
+message Item {
+  string id = 1;
+  repeated Enchantments enchantments = 2;
+}
+
+message Enchantments {
+  string enchantment = 1;
+  string enchantment_level = 2;
+}
